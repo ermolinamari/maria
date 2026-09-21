@@ -274,7 +274,7 @@ const imgPath = (c,n)=>`images/${c}/${String(n).padStart(2,'0')}.avif`;
 /* TOP DIAGONAL BAND — its own folder: images/hero/
    Photos: 01.avif or 01.jpg, 02…   Videos: same numbering, e.g. 03.mp4 (detected automatically).
    Format 9:16 (1080×1920). Set HERO_COUNT to the number of files you uploaded. */
-const HERO_COUNT = 12;
+const HERO_COUNT = 18;
 const heroBase = n=>`images/hero/${String(n).padStart(2,'0')}`;
 const FALL = Array.from({length:HERO_COUNT},(_,i)=>({t:'img',n:i+1,src:heroBase(i+1)+'.avif'}));
 
